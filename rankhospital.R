@@ -54,3 +54,12 @@ rankhospital <- function(state, outcome, num = "best") {
   # return(ranking$hospital[num])
   return(ranking[num, "hospital"])
 }
+
+# 4
+rankhospital("NC", "heart attack", "worst")
+# 5
+rankhospital("WA", "heart attack", 7)
+# 6
+rankhospital("TX", "pneumonia", 10)
+# 7
+rankhospital("NY", "heart attack", 7)

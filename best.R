@@ -78,3 +78,11 @@ best <- function(state, outcome) {
    return(mybest$hospital[1])
     return(mybest[1, "hospital"])
 }
+
+# 1
+best("SC", "heart attack")
+
+# 2
+best("NY", "pneumonia")
+# 3
+best("AK", "pneumonia")

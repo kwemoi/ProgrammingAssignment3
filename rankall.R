@@ -63,3 +63,14 @@ rankall <- function(outcome, num = "best") {
     final_data<- data.frame(row.names = names(apply_data), hospital= apply_data
                             , state= names(apply_data))
 }
+
+# 8
+r <- rankall("heart attack", 4)
+as.character(subset(r, state == "HI")$hospital)
+# 9
+r <- rankall("pneumonia", "worst")
+as.character(subset(r, state == "NJ")$hospital)
+# 10
+r <- rankall("heart failure", 10)
+as.character(subset(r, state == "NV")$hospital)
+
